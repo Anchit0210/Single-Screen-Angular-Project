@@ -1,0 +1,8 @@
+<h2>Edit Person</h2>
+<div *ngIf="person">
+  <label>Name: </label>
+  <input [(ngModel)]="person.name" placeholder="Enter name" /><br />
+  <label>Age: </label>
+  <input [(ngModel)]="person.age" placeholder="Enter age" /><br />
+  <button (click)="savePerson()">Save</button>
+</div>
